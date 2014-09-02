@@ -517,7 +517,7 @@ h3 {color: #009fc3;font-weight: normal}
 
 
 /*.navbar-toggle{color:#fff;background-color: #009fc3;}*/
-.navBar {height: 40px;vertical-align: middle;}
+.navBar {height: 38px;vertical-align: middle;background-color:#00467e;}
 ul.navList  {list-style-type: none;
 padding-top: 10px;
 }
@@ -525,7 +525,7 @@ ul.navList li {
   display: inline;
   margin-right: 10px;
   font-size: 16px;
-  background-color: #f0c001;
+  background-color: #fff;
   border-radius: 2px;
   padding: 8px;
   line-height: 1.24em;
@@ -535,6 +535,7 @@ ul.navList li a{
   text-decoration: none;
   color: #00467e;
 }
+ul.navList li:hover{background-color: #f0c001;}
 /* Media Query Breakpoint Styles
    ========================================================================== */
 
@@ -548,6 +549,8 @@ ul.navList li a{
 @media only screen and (max-width: 767px) {
     /* phones */
   .container{width:100%;margin: 0;min-height: 500px;}
+  .navBar {height: 80px;}
+  ul.navList li{margin-top: 2px;}
  h1 {font-size: 28px;}
  h2 {font-size: 22px;}
  h3 {font-size: 18px;}
