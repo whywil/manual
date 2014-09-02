@@ -516,9 +516,25 @@ h3 {color: #009fc3;font-weight: normal}
 }
 
 
-.navbar-toggle{color:#fff;background-color: #009fc3;}
-
-
+/*.navbar-toggle{color:#fff;background-color: #009fc3;}*/
+.navBar {height: 40px;vertical-align: middle;}
+ul.navList  {list-style-type: none;
+padding-top: 10px;
+}
+ul.navList li {
+  display: inline;
+  margin-right: 10px;
+  font-size: 16px;
+  background-color: #f0c001;
+  border-radius: 2px;
+  padding: 8px;
+  line-height: 1.24em;
+  cursor: pointer;
+}
+ul.navList li a{
+  text-decoration: none;
+  color: #00467e;
+}
 /* Media Query Breakpoint Styles
    ========================================================================== */
 
