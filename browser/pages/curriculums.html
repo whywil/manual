@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curriculums Prep</title>
+    <!-- Styles -->
+    <link href="../css/manual.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="container">
+
+  <header class="pageHeader">
+
+        <h1>Teaching Social Skills Groups</h1>
+        <h2>Curriculums and Activities</h2>
+
+  </header>
+
+    <!-- Main Navigation Bar -->
+  <nav class = "navBar">
+
+       <ul class = "navList">        
+         <li><a href="../../manual.html">Home</a></li>
+         <li><a href="running_groups.html">Running Groups</a></li>
+         <li><a href="curriculums.html">Curriculums &amp; Activities</a></li>
+         <li><a href="resources.html">Resource List</a></li>
+         <li><a href="http://www.adobe.com/reader/">Get a PDF Viewer</a></li>
+      </ul>
+  
+  </nav> 
+
+  <div class="row">
+    <section class="central">
+      <div class="col-md-6"> 
+        <button type="button" class="currActBtn">Pre-School 2-5yrs</button>
+        <button type="button" class="currActBtn">School Age 6-9yrs</button>
+        <button type="button" class="currActBtn">Pre-teen 10-13yrs</button>
+      </div><!--/.col-md-6 -->
+
+      <div class="col-md-6"> 
+        <button type="button" class="currActBtn">Schools and Sessional</button>
+        <button type="button" class="currActBtn">Social Skills Art Class</button>
+        <button type="button" class="currActBtn">Summer Camp Programme</button>
+    </div><!--/.col-md-6 -->
+  </section>  
+</div><!-- /.row central --> 
+
+  <div class="contentWrap">
+    <!-- PDF Content here -->
+    <section id="contentArea"></section>
+  </div>
+
+  <div class="contentWrap">
+    <!-- PDF Content here -->
+    <section id="contentArea"></section>
+  </div>
+
+</div> <!-- /.container -->
+ 
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    
+    $(document).ready(function(e){
+
+        var $control = $('.central');
+        $('.central').find('button').on('click',function(e){
+        e.preventDefault();
+        $('.pageHeader').hide();
+        $('.central').hide();
+        $('#contentArea').append('<object data="../../Curriculums/curriculums.pdf#toolbar=1&amp;navpanes=0&amp;scrollbar=0&amp;page=1&amp;view=FitBH" type="application/pdf" width="100%" height="100%"></object>');
+      });
+    });
+
+    </script>
+  </body>
+</html>
