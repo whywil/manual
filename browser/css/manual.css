@@ -495,8 +495,24 @@ h3 {color: #009fc3;font-weight: normal}
 .printResBtn:hover, .currActBtn:hover {
     background-color: rgb(252, 2, 2);
 }
+
+.accordionBtn {
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 1.2;
+  background-color: #993300;
+  color: #fff;
+  border-radius: 2px;
+  min-width: 280px;
+  min-height: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
 /* Layout positioning Styles
    ========================================================================== */
+.lhs {width:45%;float:left;}
+.rhs {width:45%;float:right;}
+.contentList{list-style: none;}
 
 #homeNav {width: 100%; min-height: 500px;}
 
