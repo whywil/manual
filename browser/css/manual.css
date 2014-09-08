@@ -444,7 +444,14 @@ h1 {color: #00467e;font-weight: normal;}
 h2 {color: #000;font-weight: normal}
 h3 {color: #009fc3;font-weight: normal}
 
-.pageHeader{padding: 5px 15px 0 15px;}
+.homeHeader {padding: 5px 15px 0 15px;text-align: center;}
+
+.pageHeader{height: 90px;padding: 5px 15px 0 15px;}
+
+.pageHeader img{float:right;width:280px;}
+
+.pageHeader h1{padding-top: 2%;}
+
 
 /* Button Styles
    ========================================================================== */
